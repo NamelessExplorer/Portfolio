@@ -4,25 +4,25 @@ import Link from 'next/link'
 import Image from 'next/dist/client/image'
 
 const Navbar = () => {
+
+
 	return (
 
 		<div className='navbar'>
 
 			<div className='logo'>
 
-				<Image width={80} height={80} src='/logo.png' alt='' />
-			
+				<Link className='homelink' href='/'>AR</Link>
+
 			</div>
 
 			<div className='flexbox'>
 
-				<Link className= "NavLink" href='/'>Home</Link>
-				<Link className= "NavLink" href='/about'>About</Link>
-				<Link className= "NavLink" href='/blog'>Blog</Link>
-				<Link className= "NavLink" href='/contact'>Contact</Link>
-				
-				<button className='NavLink navbut'>CART</button>
-				
+				<Link className="NavLink link" href='/'>Home</Link>
+				<Link className="NavLink link" href='/about'>About</Link>
+				<Link className="NavLink link" href='/blog'>Blog</Link>
+				<Link className="NavLink link" href='/contact'>Contact</Link>
+
 			</div>
 
 
