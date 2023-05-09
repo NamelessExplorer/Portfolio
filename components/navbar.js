@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/dist/client/image'
 
