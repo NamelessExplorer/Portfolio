@@ -1,0 +1,97 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+    overflow: hidden;
+    position: absolute;
+    width: 101vw;
+    z-index:1000;
+    margin-left: -15px;
+  }
+
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  
+  .flexbox{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:2%;
+    margin-right: 4%;
+    
+  }
+  
+  .homelink{
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .logo{
+    padding:2%;
+  }
+  
+  .NavLink:hover,.NavLink > .active{
+    color: red;
+  }
+  
+  .home{
+    display: flex;
+    align-items: center;
+  }
+  
+  .home .home-content{
+    max-width: 50%;
+    
+  }
+  
+  .home-content h3{
+    font-size: 3.2rem;
+    font-weight:700;
+    line-height: 1.0;
+  }
+  
+  .home-content h1{
+    font-size: 4.6rem;
+    font-weight:700;
+  }
+  
+  .home-content p{
+    font-size: 1.4rem;
+  }
+  
+  .home-content .social-media a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height:4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2.5rem 1.5rem 3rem 0;
+  }
+  
+  .NavLink{
+    margin-left:5%;
+    margin-right: 5%;
+  }
+  
+  .mainnav ul li{
+    margin: 0 24px;
+      list-style: none;
+      font-weight: bold;
+  }
+  
+  .btn :hover{
+    background: transparent;
+    color:var(--main-color);
+  }

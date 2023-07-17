@@ -1,8 +1,7 @@
 import React from 'react'
-// import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/dist/client/image'
-
+import { useState } from 'react'
 
 const Home = () => {
 
@@ -10,37 +9,19 @@ const Home = () => {
         <section className='home' id='home'>
 
             <div className='home-content'>
-                <h3>Hello, I am</h3>
-                <h1>Anshumann Ravichandar</h1>
-                <p>Lorem ipsum dolor sit amet constructor, adipiscing elit. Quaerat similique modi
-                    facilis, commodi dolore sed. Laudantium, vitae aure</p>
-
-                <div className='social-media'>
-                    <a href='#'><i class='bx bxl-github' ></i></a>
-                    <a href='#'><box-icon name='linkedin-square' type='logo' ></box-icon></a>
-                </div>
-
-                <a href='#' className='btn'>Download CV</a>
+                <h3 className='line-1'>Hey, I'm</h3>
+                <br />
+                <h3 className='line-2'>
+                    Anshumann Ravichandar
+                </h3>
+                <br /><br />
+                <p>An aspiring software developer who loves to discover new things every</p>
+                <br /><br />
+                <a href='#' className='btn contact'>CONTACT ME</a>
             </div>
 
             <div className='profession-container'>
-
-                <div className='profession-box'>
-                    <div className='profession' >
-                        <i className='bx bx-code-alt'></i>
-                        <h3>Web Developer</h3>
-                    </div>
-                    <div className='profession' >
-                        <i className='bx bx-code-alt'></i>
-                        <h3>Web Developer</h3>
-                    </div>
-                    <div className='profession' >
-                        <i className='bx bx-code-alt'></i>
-                        <h3>Web Developer</h3>
-                    </div>
-
-                </div>
-
+                <div className='profession-box' />
             </div>
 
         </section>

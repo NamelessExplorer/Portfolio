@@ -4,7 +4,6 @@ import Image from 'next/dist/client/image'
 
 const Navbar = () => {
 
-
 	return (
 
 		<div className='navbar'>
@@ -23,7 +22,6 @@ const Navbar = () => {
 				<Link className="NavLink link" href='/contact'>Contact</Link>
 
 			</div>
-
 
 		</div>
 

@@ -1,0 +1,267 @@
+.About{
+    margin-top:10%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.about-col-1{
+    flex-basis:35%;
+    padding-left: 5%;
+    padding-top: 8%;
+}
+
+.about-col-2{
+    flex-basis:60%;
+    padding-left: 5%;
+    padding-top: 8%;
+}
+.profile{
+    width:100%;
+    border-radius: 15px;
+}
+
+
+.subtitle{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width:0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width:100%;
+}
+
+
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*
+
+Media Queries Below
+
+*/
+
+@media screen and (min-width: 1300px) {
+    .row{
+        padding-top: 0%;
+        font-size: 20px;
+    
+    }
+    .profile{
+        min-width: 0;     
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-height:1000px) {
+    .row{
+        padding-top: 0%;
+        padding-left:15%;
+        font-size: 19px;
+        flex-direction: column;
+        align-content: center;
+    
+    }
+    .profile{
+        max-width: 35%; 
+            
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .row{
+        padding-top: 0%;
+        font-size: 19px;
+        flex-direction: column;
+        align-content: center;
+    
+    }
+    .profile{
+        max-width: 55%; 
+            
+    }
+}
+
+@media screen and (max-height: 420px) and (max-width:916px) {
+    .row{
+        padding-top: 2%;
+        padding-left: 0%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-height: 371px) and (max-width:781px) {
+    .row{
+        padding-top: 0%;
+        padding-left: 0%;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .row{
+        padding-top: 16%;
+        padding-left: 17%;
+        font-size:13px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .row{
+        padding-top: 16%;
+        padding-left: 17%;
+        font-size:13px;
+    }
+}
+
+@media screen and (max-width: 850px) and (min-height:1000px) {
+    .row{
+        padding-top: 30%;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-height:1000px) {
+    .row{
+        padding-top: 30%;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 5%;
+        flex-direction: column;
+        font-size:13px;
+    }
+    .profile{
+        max-width: 500px;
+        
+    }
+}
+@media screen and (max-width: 450px) {
+    .row{
+        padding-top: 16%;
+        padding-left: 3%;
+        max-width:370px;
+        font-size:16px;
+    }
+    .profile{
+        max-width: 370px;
+        
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 6%;
+        font-size:16px;
+    }
+    .profile{
+        max-width: 410px;
+        
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 15%;
+    }
+    .profile{
+        max-width: 405px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 15%;
+    }
+    .profile{
+        max-width: 399px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 2.6%;
+        font-size:16px;
+    }
+    .profile{
+        max-width: 399px;
+        
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 3%;
+    }
+    .profile{
+        max-width: 320px;
+        
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .row{
+        padding-top: 13%;
+        padding-left: 3%;
+    }
+    .profile{
+        max-width: 315px;
+        
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .row{
+        padding-top: 10%;
+        padding-left: 0;
+    }
+    .profile{
+        max-width: 320px;
+        
+    }
+}
