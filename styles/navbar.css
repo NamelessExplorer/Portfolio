@@ -10,11 +10,28 @@
     margin-left: -15px;
   }
 
+  .link{
+    cursor: pointer;
+  }
+
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fbf8f8;
+    margin: 5px;
+  }
 
   .logo{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-left: 2%;
+    margin-top: 1%;
   }
   
   
@@ -30,10 +47,6 @@
   .homelink{
     font-size: 2.5rem;
     font-weight: 600;
-  }
-  
-  .logo{
-    padding:2%;
   }
   
   .NavLink:hover,.NavLink > .active{
@@ -94,4 +107,55 @@
   .btn :hover{
     background: transparent;
     color:var(--main-color);
+  }
+
+  /*
+
+  Media Queries Below
+
+  */
+
+  @media screen and (max-width:1000px){
+    .logo{
+      margin-left: 3%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      margin-top: 4%;
+    }
+
+    .logo{
+      margin-left:5%;
+      margin-top:4%;
+    }
+  
+    .flexbox {
+      display: none;
+    }
+  
+    .flexbox.show {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      right: 0;
+    }
+  
+    .flexbox.show a {
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width:700px){
+    .logo{
+      margin-left: 6%;
+    }
   }

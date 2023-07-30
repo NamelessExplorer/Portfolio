@@ -10,8 +10,9 @@ body {
   height: 100vh;
   width:100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
-  background: radial-gradient(#232627,#0d0e0f);
+  background:black;
 }
 
 a {
