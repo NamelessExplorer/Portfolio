@@ -1,54 +1,28 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '@/styles/Footer.module.css'
-import namelogo from '../public/YVicon.png'
 import { Poppins } from 'next/font/google'
+import Overheading from './overheading'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const poppins = Poppins({ weight: ['500'], style: ['normal', 'italic'], subsets: ['latin'], display: 'swap' })
 
 export default function Footer() {
-  const links = [
-    {
-      name: 'LinkedIn', url: 'https://www.linkedin.com/in/yashv27/'
-    }, {
-      name: 'LeetCode', url: 'https://leetcode.com/yvs2701/'
-    }, {
-      name: 'Github', url: 'https://github.com/yvs2701'
-    }, {
-      name: 'About', url: '/'
-    }, {
-      name: 'Projects', url: '/projects'
-    }
-  ];
+
   return (
     <>
-      <section className={styles.container}>
-        <div className={styles.footer}>
-          <div className={styles.namebrand}>
-            <Link
-              className={styles.logo + ' ' + poppins.className}
-              href="/"
-            >
-              <Image
-                src={namelogo}
-                alt="Name logo of Anshumann Ravichandar"
-                height={30}
-                width={58}
-                placeholder="blur"
-              />
-            </Link>
-          </div>
+      <div className='footer1'>
+        <p className='social'>Connect with me: </p>
+        <a href="https://github.com/NamelessExplorer" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={32} />
+        </a>
+        <a href="https://www.linkedin.com/in/anravi-4294b8236/" target="_blank" rel="noopener noreferrer" className='ln'>
+          <FaLinkedin size={32} />
+        </a>
 
-          <div className={styles.links}>
-            {
-              links.map((link, idx) => <Link key={idx} href={link.url} className={styles.link + ' ' + poppins.className}>{link.name}</Link>)
-            }
-          </div>
-        </div>
-        <div className={styles.copyright + ' ' + poppins.className}>
-          Made with &hearts; by Yashvardhan Singh
-        </div>
-      </section>
+      </div>
+      <div className='footer2'>
+        <p>@2023 Copyright: Anshumann Ravichandar</p>
+      </div>
     </>
   )
 }

@@ -21,15 +21,15 @@ const Navbar = () => {
 
 			</div>
 
-			<div className='flexbox'>
+			<div className={`flexbox ${showMobileMenu ? 'active' : ''}`} >
 
-				<Link className="NavLink link" href='#home'>Home</Link>
-				<Link className="NavLink link" href='#about'>About</Link>
-				<Link className="NavLink link" href='#projects'>Projects</Link>
-				<Link className="NavLink link" href='#contact'>Contact</Link>
+				<Link className="NavLink" href='#home'>Home</Link>
+				<Link className="NavLink" href='#about'>About</Link>
+				<Link className="NavLink" href='#projects'>Projects</Link>
+				<Link className="NavLink" href='#contact'>Contact</Link>
 
 			</div>
-			<div className='hamburger-menu' onClick={toggleMobileMenu}>
+			<div className={`hamburger-menu ${showMobileMenu ? 'open' : ''}`} onClick={toggleMobileMenu}>
 				<div className='line'></div>
 				<div className='line'></div>
 				<div className='line'></div>

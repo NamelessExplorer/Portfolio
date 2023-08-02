@@ -1,5 +1,4 @@
-
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -8,44 +7,93 @@
     margin-top: 2%;
 }
 
-.about-col-1{
-    flex-basis:35%;
+.about-col-1 {
+    flex-basis: 35%;
     padding-left: 0%;
-    padding:5%;
-    padding-top: 8%;
+    padding: 5%;
+    padding-top: 10%;
     margin-bottom: 5%;
 }
 
-.about-col-2{
-    flex-basis:60%;
+.about-col-2 {
+    flex-basis: 60%;
     padding-left: 5%;
     padding-top: 8%;
     padding-bottom: 20%;
 }
-.profile{
-    width:100%;
-    border-radius: 15px;
+
+.skills {
+    background-color: #e2e8f0;
+    /* Gray-200 */
+    padding: 0.5rem 1rem;
+    /* px-4 py-2 */
+    margin-right: 0.5rem;
+    /* mr-2 */
+    margin-top: 0.5rem;
+    /* mt-2 */
+    color: #4a5568;
+    /* Gray-500 */
+    font-weight: 600;
+    /* font-semibold */
+    border-radius: 0.55rem;
+    /* rounded */
+    cursor: none;
+    font-size: 20px;
+}
+
+.education{
+    background-color: #e2e8f0;
+    /* Gray-200 */
+    padding: 0.5rem 1rem;
+    /* px-4 py-2 */
+    margin-right: 0.5rem;
+    /* mr-2 */
+    margin-top: 0.5rem;
+    /* mt-2 */
+    color: #4a5568;
+    /* Gray-500 */
+    font-weight: 600;
+    /* font-semibold */
+    border-radius: 0.55rem;
+    /* rounded */
+    cursor: none;
+    font-size: 20px;
 }
 
 
-.subtitle{
+.profile {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #ffc3d6;
+}
+
+.profile::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
+    /* Adjust the overlay gradient */
+    backdrop-filter: blur(10px);
+    /* Adjust the blur radius */
+    pointer-events: none;
+}
+
+.subtitle {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 8%;
     margin-left: 0%;
 }
 
-.describe{
+.describe {
     font-size: 22px;
     margin-bottom: 7%;
+    word-wrap:break-word;
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 23px;
     font-weight: 500;
@@ -53,10 +101,10 @@
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
-    width:0;
-    height:3px;
+    width: 0;
+    height: 3px;
     background: #ff004f;
     position: absolute;
     left: 0;
@@ -64,16 +112,26 @@
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
-    width:100%;
+.tab-links.active-link::after {
+    width: 100%;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    /* Slide up 30px, adjust as needed */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.tab-contents.active-tab{
-    display: block;
+.tab-contents.active-tab {
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: start;
 }
 
 
@@ -85,93 +143,117 @@ Media Queries Below
 
 
 @media screen and (max-width: 1400px) and (min-height:1000px) {
-    .row{
+    .row {
         padding-top: 0%;
-        padding-left:20%;
+        padding-left: 20%;
         font-size: 25px;
         flex-direction: column;
         align-content: center;
-    
+
     }
 
-    .profile{
-        max-width: 35%; 
+    .profile {
+        max-width: 35%;
         margin-left: 18%;
-            
+
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .row{
+    .row {
         padding-top: 0%;
         font-size: 25px;
         flex-direction: column;
-    
+
     }
-    .profile{
-        max-width: 35%; 
-            
+
+    .profile {
+        max-width: 35%;
+        margin-bottom: 15%;
+    }
+
+    .about-col-1{
+        margin-top: 10%;
     }
 }
 
 @media screen and (max-width: 900px) {
 
-    .about-col-1{
+    .about-col-1 {
         margin-top: 15%;
     }
-    .row{
+
+    .row {
         padding-top: 0%;
         font-size: 25px;
         flex-direction: column;
         padding-left: 5%;
-    
+
     }
-    .profile{
+
+    .profile {
         margin-top: 5%;
-        width:50%;
-        margin-left: 5%;
-            
+        width: 50%;
+        margin-left: 0%;
+
     }
-    .subtitle{
+
+    .subtitle {
         margin-left: 0%;
         padding-left: 0%;
     }
 }
 
+@media screen and (max-width:800px) {
+    .education{
+        font-size: 18px;
+    }
+    .skills{
+        font-size:18px;
+    }
+}
+
 @media screen and (max-width:800px) and (max-height: 1300px) {
-    .row{
+    .row {
         padding-top: 0%;
         font-size: 25px;
         flex-direction: column;
         margin-top: -35%;
-    
+
     }
-    .profile{
-        max-width: 35%; 
-            
+
+    .profile {
+        max-width: 35%;
+
+    }
+}
+
+@media screen and (max-width:800px){
+    .about-col-1{
+        margin-top: 45%;
     }
 }
 
 @media screen and (max-height: 420px) and (max-width:916px) {
-    
-    .row{
+
+    .row {
         padding-top: 2%;
         padding-left: 0%;
         font-size: 25px;
         justify-content: center;
     }
-    
+
 }
 
-@media screen and (max-width:500px){
-    .profile{
+@media screen and (max-width:500px) {
+    .profile {
         margin-left: 30%;
         padding: 0;
     }
 }
 
 @media screen and (max-height: 371px) and (max-width:781px) {
-    .row{
+    .row {
         padding-top: 0%;
         padding-left: 0%;
         font-size: 25px;
@@ -180,156 +262,169 @@ Media Queries Below
 
 
 @media screen and (max-width: 360px) {
-    .row{
+    .row {
         padding-top: 16%;
         padding-left: 17%;
-        font-size:29px;
+        font-size: 29px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .row{
+    .row {
         padding-top: 16%;
         padding-left: 17%;
-        font-size:20px;
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 850px) and (min-height:1000px) {
-    .row{
+    .row {
         padding-top: 30%;
         padding-left: 0%;
     }
 }
 
 @media screen and (max-width: 811px) and (min-height:1081px) {
-    .row{
+    .row {
         padding-top: 30%;
         padding-left: 0%;
     }
 
-    .profile{
+    .profile {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 800px) and (min-height:1000px) {
-    .row{
+    .row {
         padding-top: 30%;
         padding-left: 0%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .row{
+    .row {
         padding-top: 13%;
-   
+
         flex-direction: column;
-        font-size:13px;
+        font-size: 13px;
     }
-    .profile{
+
+    .profile {
         max-width: 500px;
-        
+
     }
 }
+
 @media screen and (max-width: 450px) {
-    .row{
+    .row {
         padding-top: 16%;
         padding-left: 3%;
-        max-width:370px;
-        font-size:16px;
+        max-width: 370px;
+        font-size: 16px;
     }
-    .profile{
-        max-width: 370px;   
+
+    .profile {
+        max-width: 370px;
     }
-    .subtitle{
+
+    .subtitle {
         margin-left: 20%;
         margin-bottom: 20%;
     }
-    .describe{
+
+    .describe {
         margin-top: 10%;
         margin-bottom: 20%;
     }
-    .about-col-2{
+
+    .about-col-2 {
         margin-bottom: 15%;
     }
 }
 
 @media screen and (max-width: 421px) {
-    .row{
+    .row {
         padding-top: 13%;
         padding-left: 6%;
-        font-size:16px;
+        font-size: 16px;
     }
-    .profile{
+
+    .profile {
         max-width: 410px;
-        
+
     }
 }
 
 @media screen and (max-width: 408px) {
-    .row{
+    .row {
         padding-top: 13%;
         padding-left: 15%;
     }
-    .profile{
+
+    .profile {
         max-width: 405px;
-        
+
     }
 }
 
 @media screen and (max-width: 400px) {
-    .row{
+    .row {
         padding-top: 13%;
         padding-left: 15%;
     }
-    .profile{
+
+    .profile {
         max-width: 399px;
-        
+
     }
 }
 
 @media screen and (max-width: 400px) {
-    .row{
+    .row {
         padding-top: 13%;
         padding-left: 2.6%;
-        font-size:16px;
+        font-size: 16px;
     }
-    .profile{
+
+    .profile {
         max-width: 399px;
-        
+
     }
 }
 
 @media screen and (max-width: 390px) {
-    .row{
+    .row {
         padding-top: 13%;
         padding-left: 3%;
     }
-    .profile{
+
+    .profile {
         max-width: 320px;
-        
+
     }
 }
 
 @media screen and (max-width: 380px) {
-    .row{
+    .row {
         padding-top: 13%;
         padding-left: 3%;
     }
-    .profile{
+
+    .profile {
         max-width: 315px;
-        
+
     }
 }
 
 @media screen and (max-width: 361px) {
-    .row{
+    .row {
         padding-top: 10%;
         padding-left: 0;
     }
-    .profile{
+
+    .profile {
         max-width: 320px;
-        
+
     }
 }

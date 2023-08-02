@@ -1,0 +1,32 @@
+
+.footer1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding:1%;
+    width: 100vw;
+    background-color: grey;
+
+}
+
+.social{
+    margin-right: 10%;
+}
+
+.ln{
+    padding-left: 2%;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding:1%;
+    width: 100vw;
+    background-color: grey;
+
+}

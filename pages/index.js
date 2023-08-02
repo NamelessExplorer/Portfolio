@@ -3,6 +3,7 @@ import Navbar from '@/pages/components/navbar'
 import About from '@/pages/components/about'
 import Projects from '@/pages/components/projects'
 import Contact from '@/pages/components/contact'
+import Footer from '@/pages/components/footer'
 import {React, useState} from 'react'
 
 const Home = () => {
@@ -51,6 +52,7 @@ const Home = () => {
         <About id="#section2"/>
         <Projects id="#section3"/>
         <Contact id="#section4"/>
+        <Footer/>
       </main>
     </>
   );

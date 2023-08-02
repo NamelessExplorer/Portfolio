@@ -1,5 +1,6 @@
 import Image from 'next/dist/client/image'
 import { useState, useEffect, useRef } from 'react'
+import { HiExternalLink } from 'react-icons/hi';
 
 const Projects = () => {
 
@@ -12,25 +13,25 @@ const Projects = () => {
                 <div className='work'>
                     <img src='laptop.png' />
                     <div className='layer'>
-                        <h3>Media App</h3>
-                        <p>Connects you with people throughout the world</p>
-                        <a href='#'></a>
+                        <h3>Allergy Detection</h3>
+                        <p>Checks food items online for ingredients you are allergic to.</p>
+                        <a href='#'><HiExternalLink size={32} /></a>
                     </div>
                 </div>
                 <div className='work'>
                     <img src='laptop.png' />
                     <div className='layer'>
-                        <h3>Media App</h3>
-                        <p>Connects you with people throughout the world</p>
-                        <a href='#'></a>
+                        <h3>One Mile App</h3>
+                        <p>An online one to one video calling service.</p>
+                        <a href='#'><HiExternalLink size={32}/></a>
                     </div>
                 </div>
                 <div className='work'>
                     <img src='laptop.png' />
                     <div className='layer'>
-                        <h3>Media App</h3>
-                        <p>Connects you with people throughout the world</p>
-                        <a href='#'></a>
+                        <h3>?????</h3>
+                        <p>???????????</p>
+                        <a href='#'><HiExternalLink size={32} /></a>
                     </div>
                 </div>
             </div>

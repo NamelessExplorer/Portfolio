@@ -12,22 +12,20 @@ const Contact = () => {
         <>
         <section id = 'contact'>
             <div className="container">
+                
                 <div className="contact-left">
                     <h1 className="subtitle3">Contact Me</h1>
-                    <p>example.contact@gmail.com</p>
-                    <p>12345678</p>
-
-                    <div className="social-media">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </div>
-                    <button type="submit" className='cv'>Download CV</button>
+                    <h2>Email ID</h2>
+                    <p>arx3099@gmail.com</p>
+                    <br/><br/>
+                    <h2>Phone Number</h2>
+                    <p>(+91) 8920441714</p>
+                   
                 </div>
+                
                 <div className="contact-right">
 
-                    <h1 className='formtitle'>Want to get in touch?</h1>
+                    <h2 className='formtitle'>Want to get in touch? Drop an email!</h2>
                     <form method="post">
 
                         <div className="nue">
