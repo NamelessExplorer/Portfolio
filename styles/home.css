@@ -404,6 +404,13 @@
   }
 }
 
+@media screen and (max-width:600px){
+  .profession-container{
+    width:350px;
+    height:520px;
+  }
+}
+
 @media screen and (max-width:460px) {
 
   .profession-container{
