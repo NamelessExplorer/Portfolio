@@ -39,13 +39,13 @@ const About = () => {
             <div className='row'>
 
                 <div className='about-col-1'>
-                    <Image className='profile' src="profile.png" />
+                    <img className='profile' src="profile.png" />
                 </div>
 
                 <div className='about-col-2'>
 
                     <h1 className='subtitle'>About Me</h1>
-                    <p className='describe'>Hey! I'm an aspiring software developer who likes to learn about new technologies. Currently I'm exploring the field of web development and am proficient in MERN stack.</p>
+                    <p className='describe'>Hey! I&apos;m an aspiring software developer who likes to learn about new technologies. Currently I&apos;m exploring the field of web development and am proficient in MERN stack.</p>
 
                     <div className='tab-titles'>
                         <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`} onClick={() => opentab('skills')}
