@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@napi-rs/canvas": "^0.1.41",
     "animate.css": "^4.1.1",
     "boxicons": "^2.1.4",
     "eslint": "8.37.0",

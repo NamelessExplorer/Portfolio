@@ -39,7 +39,7 @@ const About = () => {
             <div className='row'>
 
                 <div className='about-col-1'>
-                    <img className='profile' src="profile.png" />
+                    <Image className='profile' src="profile.png" />
                 </div>
 
                 <div className='about-col-2'>
