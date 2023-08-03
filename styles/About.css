@@ -247,7 +247,14 @@ Media Queries Below
 
 @media screen and (max-width:500px) {
     .profile {
-        margin-left: 30%;
+        margin-left: 22%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .profile {
+        margin-left: 28%;
         padding: 0;
     }
 }
