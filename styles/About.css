@@ -26,6 +26,7 @@
 }
 
 .skills {
+    
     background-color: #e2e8f0;
     /* Gray-200 */
     padding: 0.5rem 1rem;
@@ -67,7 +68,7 @@
 .profile {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 0px #69e271;
+    box-shadow: 0px 0px 10px 0px #ffffff;
 }
 
 .profile::before {
@@ -257,7 +258,7 @@ Media Queries Below
 
 @media screen and (max-width:440px) {
     .profile {
-        margin-left: 28%;
+        margin-left: 13%;
         padding: 0;
     }
 }
