@@ -8,7 +8,6 @@
   width: 101vw;
   z-index: 1000;
   margin-left: -15px;
-  backdrop-filter: blur(4px);
 }
 
 .link {
