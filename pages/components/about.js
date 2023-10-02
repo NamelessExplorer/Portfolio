@@ -40,7 +40,7 @@ const About = () => {
             <div className='row'>
 
                 <div className='about-col-1'>
-                    <img className='profile' src="profile.png" />
+                    <img className='profile' src="profile.png" loading='lazy' />
                 </div>
 
                 <div className='about-col-2'>
