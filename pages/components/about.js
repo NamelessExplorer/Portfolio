@@ -11,7 +11,8 @@ const skills = [
     { skill: "MongoDB" },
     { skill: "ExpressJS" },
     { skill: "NodeJS" },
-    { skill: "Core Java" }
+    { skill: "Core Java" },
+    { skill: "Docker"}
 ]
 
 const education = [
