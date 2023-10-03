@@ -29,8 +29,8 @@ const Projects = () => {
                 <div className='work'>
                     <img src='laptop.png' />
                     <div className='layer'>
-                        <h3>?????</h3>
-                        <p>???????????</p>
+                        <h3>SmartLens</h3>
+                        <p>To be added</p>
                         <a href='#'><HiExternalLink size={32} /></a>
                     </div>
                 </div>
