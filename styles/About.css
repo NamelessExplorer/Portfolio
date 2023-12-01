@@ -10,6 +10,7 @@
 .about-col-1 {
     flex-basis: 35%;
     display: flex;
+    position: fixed;
     justify-content: center;
     padding-left: 0%;
     padding: 5%;
