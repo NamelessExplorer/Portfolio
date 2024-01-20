@@ -41,7 +41,7 @@ const Contact = () => {
                 <div className="contact-right">
 
                     <h2 className='formtitle' data-text="Drop&nbsp;an&nbsp;email!">Want to get in touch? </h2>
-                    <form method="post" className="form" ref={form} onSubmit="sendEmail()">
+                    <form method="post" className="form" ref={form} onSubmit={sendEmail}>
 
                         <div className="nue">
                             <input className="io1" type="text" name="Name" placeholder="Your Name" required />
