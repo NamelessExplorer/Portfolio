@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "animate.css": "^4.1.1",
     "boxicons": "^2.1.4",
     "eslint": "8.37.0",

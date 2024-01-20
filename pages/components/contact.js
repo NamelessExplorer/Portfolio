@@ -47,7 +47,7 @@ const Contact = () => {
                             <input className="io1" type="text" name="user_name" placeholder="Your Name" required />
                             <input className="io2" type="email" name="email_id" placeholder="Your Email" required />
                         </div>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
 
                         <button type="submit" name="message" className="message" value="Send">Send</button>
                     </form>
