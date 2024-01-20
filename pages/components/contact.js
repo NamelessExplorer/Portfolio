@@ -1,12 +1,26 @@
 import { Poppins } from 'next/font/google'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
 
 const poppins = Poppins({ weight: ['400', '500'], style: ['normal'], subsets: ['latin'], display: 'swap' })
 
 const Contact = () => {
 
+    const form = useRef();
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_7jkuhj3', 'template_6eagxfp', form.current, 'yq4j4_zQNZI2io0ue')
+          .then((result) => {
+              console.log(result.text);
+              console.log("message sent");
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
 
     return (
         <>
@@ -26,7 +40,7 @@ const Contact = () => {
                 <div className="contact-right">
 
                     <h2 className='formtitle' data-text="Drop&nbsp;an&nbsp;email!">Want to get in touch? </h2>
-                    <form method="post" className="form">
+                    <form method="post" className="form" ref={form} onSubmit="sendEmail()">
 
                         <div className="nue">
                             <input className="io1" type="text" name="Name" placeholder="Your Name" required />
@@ -34,7 +48,7 @@ const Contact = () => {
                         </div>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
 
-                        <button type="submit" className="message">Submit</button>
+                        <button type="submit" className="message">Send</button>
                     </form>
                 </div>
             </div>
