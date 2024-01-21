@@ -4,13 +4,37 @@ import { HiExternalLink } from 'react-icons/hi';
 
 const Projects = () => {
 
+    useEffect(() => {
+        const sections = document.querySelectorAll('.scroll-section');
+        const options = {
+          threshold: 0.2,
+        };
+    
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('slide-in');
+            }
+          });
+        }, options);
+  
+    
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+  
+    
+        return () => {
+          observer.disconnect(); // Cleanup observer on component unmount
+        };
+      }, []); // Empty dependency array ensures the effect runs once on mount
 
     return (
         <>
         <section id='projects'>
-            <h1 className='subtitle2'>My Projects</h1>
+            <h1 className='subtitle2 scroll-section'>My Projects</h1>
             <div className='work-list'>
-                <div className='work'>
+                <div className='work scroll-section'>
                     <img src='laptop.png' />
                     <div className='layer'>
                         <h3>Allergy Detection</h3>
@@ -18,7 +42,7 @@ const Projects = () => {
                         <a href='#'><HiExternalLink size={32} /></a>
                     </div>
                 </div>
-                <div className='work'>
+                <div className='work scroll-section'>
                     <img src='laptop.png' />
                     <div className='layer'>
                         <h3>One Mile App</h3>
@@ -26,7 +50,7 @@ const Projects = () => {
                         <a href='#'><HiExternalLink size={32}/></a>
                     </div>
                 </div>
-                <div className='work'>
+                <div className='work scroll-section'>
                     <img src='laptop.png' />
                     <div className='layer'>
                         <h3>SmartLens</h3>

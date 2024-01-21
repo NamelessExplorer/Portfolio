@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 
 const skills = [
     { skill: "HTML" },
@@ -9,10 +9,11 @@ const skills = [
     { skill: "Next.JS" },
     { skill: "Tailwind CSS" },
     { skill: "MongoDB" },
+    { skill: "MySQL"},
     { skill: "ExpressJS" },
     { skill: "NodeJS" },
-    { skill: "Core Java" },
-    { skill: "Docker"}
+    { skill: "Java" }
+    
 ]
 
 const education = [
@@ -22,66 +23,81 @@ const education = [
 ]
 
 const About = () => {
-
-
-    const [activeTab, setActiveTab] = useState('');
-
-    const opentab = (tabName) => {
-        setActiveTab(tabName);
-    };
-
+    const [activeTab, setActiveTab] = useState('skills');
+  
     useEffect(() => {
-        opentab('skills');
-    }, []);
+      const sections = document.querySelectorAll('.scroll-section');
+      const options = {
+        threshold: 0.2,
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in');
+          }
+        });
+      }, options);
 
+  
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+
+  
+      return () => {
+        observer.disconnect(); // Cleanup observer on component unmount
+      };
+    }, []); // Empty dependency array ensures the effect runs once on mount
+  
+    const opentab = (tabName) => {
+      setActiveTab(tabName);
+    };
+  
     return (
-
-        <section id='about'>
-            <div className='row'>
-
-                <div className='about-col-1'>
-                    <img className='profile' src="profile.png" loading='lazy' />
-                </div>
-
-                <div className='about-col-2'>
-
-                    <h1 className='subtitle'>About Me</h1>
-                    <p className='describe'>Hey! I&apos;m an aspiring software developer who likes to learn about new technologies. Currently I&apos;m exploring the field of web development and am proficient in MERN stack.</p>
-
-                    <div className='tab-titles'>
-                        <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`} onClick={() => opentab('skills')}
-                        >
-                            Skills
-                        </p>
-                        <p className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`} onClick={() => opentab('education')}>
-                            Education
-                        </p>
-                    </div>
-
-                    <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`}>
-                        {
-                            skills.map((item, idx) => {
-                                return <p key={idx} className='skills'>{item.skill}</p>
-                            })
-                        }
-                    </div>
-
-                    <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`}>
-                        {
-                            education.map((ite,idx) => {
-                                return <p key={idx} className='education'>{ite.edu}</p>
-                            })
-                        }
-                    </div>
-
-                </div>
-
-                <script type='text/javascript'>
-
-                </script>
+      <section id='about'>
+        <div className='row'>
+          <div className='about-col-1 '>
+            <img className='profile scroll-section' src="profile.png" loading='lazy' alt='Profile' />
+          </div>
+  
+          <div className='about-col-2'>
+  
+            <h1 className='subtitle scroll-section'>About Me</h1>
+            <p className='describe scroll-section'>Hey! I&apos;m an aspiring software developer who likes to learn about new technologies. Currently, I&apos;m exploring the field of web development and am proficient in MERN stack.</p>
+  
+            <div className='tab-titles scroll-section'>
+              <p
+                className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
+                onClick={() => opentab('skills')}
+              >
+                Skills
+              </p>
+              <p
+                className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
+                onClick={() => opentab('education')}
+              >
+                Education
+              </p>
             </div>
-        </section>
-    )
-}
+  
+            <div className={`tab-contents scroll-section ${activeTab === 'skills' ? 'active-tab' : ''}`}>
+              {skills.map((item, idx) => (
+                <p key={idx} className='skills scroll-section'>{item.skill}</p>
+              ))}
+            </div>
+  
+            <div className={`tab-contents scroll-section ${activeTab === 'education' ? 'active-tab' : ''}`}>
+              {education.map((ite, idx) => (
+                <p key={idx} className='education scroll-section'>{ite.edu}</p>
+              ))}
+            </div>
+  
+          </div>
 
-export default About;
+        </div>
+      </section>
+    );
+  };
+  
+  export default About;

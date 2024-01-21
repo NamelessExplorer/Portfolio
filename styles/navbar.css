@@ -41,6 +41,7 @@
   justify-content: space-around;
   margin: 2%;
   margin-right: 4%;
+  font-weight: bold;
 
 }
 
@@ -51,7 +52,7 @@
 
 .NavLink:hover,
 .NavLink>.active {
-  color: #404040;
+  color: #1bac61;
 }
 
 

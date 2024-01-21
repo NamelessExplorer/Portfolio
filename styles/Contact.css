@@ -61,7 +61,7 @@
   color: black;
 }
 
-.message {
+.sendmessage {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 4px;
@@ -76,7 +76,7 @@
   margin-bottom: 5%;
 }
 
-.message:hover {
+.sendmessage:hover {
   background-color: white;
   transition: 1.5s;
   color: black;
@@ -99,6 +99,9 @@ form textarea {
   border-radius: 6px;
 }
 
+.textbox{
+  margin-right: 5%;
+}
 
 .nue {
   width: 90%;

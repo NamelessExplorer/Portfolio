@@ -29,27 +29,27 @@ const Contact = () => {
             <div className="container">
                 
                 <div className="contact-left">
-                    <h1 className="subtitle3">Contact Me</h1>
-                    <h2>Email ID</h2>
-                    <p>arx3099@gmail.com</p>
+                    <h1 className="subtitle3 scroll-section">Contact Me</h1>
+                    <h2 className='scroll-section'>Email ID</h2>
+                    <p className='scroll-section'>arx3099@gmail.com</p>
                     <br/><br/>
-                    <h2>Phone Number</h2>
-                    <p>(+91) 8920441714</p>
+                    <h2 className='scroll-section'>Phone Number</h2>
+                    <p className='scroll-section'>(+91) 8920441714</p>
                    
                 </div>
                 
                 <div className="contact-right">
 
-                    <h2 className='formtitle' data-text="Drop&nbsp;an&nbsp;email!">Want to get in touch? </h2>
+                    <h2 className='formtitle scroll-section' data-text="Drop&nbsp;an&nbsp;email!">Want to get in touch? </h2>
                     <form method="post" className="form" ref={form} onSubmit={sendEmail}>
 
                         <div className="nue">
-                            <input className="io1" type="text" name="user_name" placeholder="Your Name" required />
-                            <input className="io2" type="email" name="email_id" placeholder="Your Email" required />
+                            <input className="io1 scroll-section" type="text" name="user_name" placeholder="Your Name" required />
+                            <input className="io2 scroll-section" type="email" name="email_id" placeholder="Your Email" required />
                         </div>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <textarea className="textbox scroll-section" name="message" rows="6" placeholder="Your Message"></textarea>
 
-                        <button type="submit" name="message" className="message" value="Send">Send</button>
+                        <button type="submit" name="message" className="sendmessage scroll-section" value="Send">Send</button>
                     </form>
                 </div>
             </div>
