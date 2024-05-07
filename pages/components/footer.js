@@ -21,7 +21,7 @@ export default function Footer() {
 
       </div>
       <div className='footer2'>
-        <p>@2023 Copyright: Anshumann Ravichandar</p>
+        <p>@2024 Copyright: Anshumann Ravichandar</p>
       </div>
     </>
   )

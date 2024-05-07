@@ -9,15 +9,15 @@ const skills = [
     { skill: "Next.JS" },
     { skill: "Tailwind CSS" },
     { skill: "MongoDB" },
+    {skill: "Neo4j"},
     { skill: "MySQL"},
-    { skill: "ExpressJS" },
-    { skill: "NodeJS" },
-    { skill: "Java" }
+    { skill: "Java" },
+    {skill: "Python"},
     
 ]
 
 const education = [
-    { edu: "CSE with Specialization in AIML (Vellore Institute of Technology, Bhopal)" },
+    { edu: "Computer Science and Engineering (Vellore Institute of Technology, Bhopal)" },
     { edu: "Class 12th, Fahaheel Al-Watanieh Indian Private School(FAIPS), Kuwait" },
     { edu: "Class 10th Delhi International School, New Delhi" }
 ]
