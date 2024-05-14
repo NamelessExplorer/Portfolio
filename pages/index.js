@@ -11,7 +11,6 @@ const Home = () => {
   const [message, setMessage] = useState('');
 
   const handleSendMessage = (dataToSend) => {
-    // This function is called by ChildComponentA to send data to ChildComponentB
     setMessage(dataToSend);
   };
 

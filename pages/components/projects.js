@@ -39,7 +39,7 @@ const Projects = () => {
                     <div className='layer'>
                         <h3>Allergy Detection</h3>
                         <p>Checks food items online for ingredients you are allergic to.</p>
-                        <a href='#'><HiExternalLink size={32} /></a>
+                        <a href='https://github.com/anr2601/Allergy-Detector'><HiExternalLink size={32} /></a>
                     </div>
                 </div>
                 <div className='work scroll-section'>
@@ -47,15 +47,15 @@ const Projects = () => {
                     <div className='layer'>
                         <h3>One Mile App</h3>
                         <p>An online one to one video calling service.</p>
-                        <a href='#'><HiExternalLink size={32}/></a>
+                        <a href='https://github.com/anr2601/One-Mile'><HiExternalLink size={32}/></a>
                     </div>
                 </div>
                 <div className='work scroll-section'>
                     <img src='laptop.png' />
                     <div className='layer'>
                         <h3>SmartLens</h3>
-                        <p>To be added</p>
-                        <a href='#'><HiExternalLink size={32} /></a>
+                        <p>Scans medical items to provide instant information.</p>
+                        <a href='https://github.com/anr2601/SmartLens'><HiExternalLink size={32} /></a>
                     </div>
                 </div>
             </div>

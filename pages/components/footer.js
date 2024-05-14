@@ -12,7 +12,7 @@ export default function Footer() {
     <>
       <div className='footer1'>
         <p className='social'>Connect with me: </p>
-        <a href="https://github.com/NamelessExplorer" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/anr2601" target="_blank" rel="noopener noreferrer">
           <FaGithub size={32} />
         </a>
         <a href="https://www.linkedin.com/in/anravi-4294b8236/" target="_blank" rel="noopener noreferrer" className='ln'>
