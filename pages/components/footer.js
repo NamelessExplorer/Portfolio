@@ -15,7 +15,7 @@ export default function Footer() {
         <a href="https://github.com/anr2601" target="_blank" rel="noopener noreferrer">
           <FaGithub size={32} />
         </a>
-        <a href="https://www.linkedin.com/in/anravi-4294b8236/" target="_blank" rel="noopener noreferrer" className='ln'>
+        <a href="https://www.linkedin.com/in/ansh12/" target="_blank" rel="noopener noreferrer" className='ln'>
           <FaLinkedin size={32} />
         </a>
 
