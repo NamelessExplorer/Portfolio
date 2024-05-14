@@ -8,10 +8,10 @@ const skills = [
     { skill: "ReactJS" },
     { skill: "NextJS" },
     { skill: "MongoDB" },
-    {skill: "Neo4j"},
     { skill: "MySQL"},
     { skill: "Java" },
     {skill: "Python"},
+    {skill: "Langchain"}
     
 ]
 
@@ -63,7 +63,7 @@ const About = () => {
           <div className='about-col-2'>
   
             <h1 className='subtitle scroll-section'>About Me</h1>
-            <p className='describe scroll-section'>Hey! I&apos;m an aspiring software developer who likes to learn about new technologies. Currently, I&apos;m exploring the field of web development and am proficient in MERN stack.</p>
+            <p className='describe scroll-section'>Hey! I&apos;m always up for new challenges. Juggling between multiple new technologies, I&apos;m exploring a wide range of technological domains, ranging from web development, to machine learning and app development.</p>
   
             <div className='tab-titles scroll-section'>
               <p

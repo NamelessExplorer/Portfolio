@@ -42,7 +42,7 @@ const Home = () => {
               </div>
             </div>
 
-            <p>An aspiring software developer who loves to discover new things every day.</p>
+            <p>An aspiring software developer fueled by a passion for delivering polished products.</p>
 
             <a href='#contact' className='btn contact'>CONTACT ME</a>
           </div>
